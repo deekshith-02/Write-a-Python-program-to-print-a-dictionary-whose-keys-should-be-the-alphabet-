@@ -1,0 +1,16 @@
+def print_alphabet_ascii_dictionary():
+    alphabet_ascii_dict = {}
+
+    for i in range(97, 123):
+        alphabet = chr(i)
+        ascii_value = i
+        alphabet_ascii_dict[alphabet] = ascii_value
+
+    return alphabet_ascii_dict
+
+# Call the function to get the alphabet ASCII dictionary
+result_dict = print_alphabet_ascii_dictionary()
+
+# Print the dictionary
+for alphabet, ascii_value in result_dict.items():
+    print(f"{alphabet}: {ascii_value}")
